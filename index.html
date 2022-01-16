@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fontawesome-web/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Great+Vibes&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=Waterfall&display=swap" rel="stylesheet">
+    <title>Nhóm 6</title>
+</head>
+<body>
+    <div class="main">
+        <!--Header-->
+        <div class="header">
+            <div class="header__logo">
+                <img src="./assets/img/logo/logo.jpg" alt="" class="header-logo__img">
+            </div>
+            
+            <div class="header__content">
+                <div class="header__heading">
+                    <span class="header-heading__text">Cửa hàng BT21</span>
+
+                    <span class="header-heading__icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span class="header-heading__phone">0938 78 0005 - 0967 78 0005</span>
+                   
+                </div>
+
+    
+            <!--Header navbar-->
+                <div class="header__nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link"><b><p><font face="monospace">TRANG CHỦ</font><p></b></a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link"><b><p><font face="monospace">SHOP</font><p></b></a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link"><b><p><font face="monospace">NHÂN VẬT</font><p></b></a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link"><b><p><font face="monospace">CHỦ ĐỀ</font><p></b></a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link"><b><p><font face="monospace">SỰ KIỆN</font><p></b></a>
+                        </li>
+                    </ul>                  
+                    <div class="header__search">
+                        <input type="text" class="header-search__input" placeholder="Tìm kiếm">
+                            <i class="fas fa-search header-search__icon"></i>
+                    </div>
+                </div>
+        </div>
+
+            <!--Header-nav mobile -->
+            <button class="nav-mobile-open-btn js__menu-btn--open"><i class="fas fa-bars nav-mobile-icon"></i></button>
+            <div class="header__nav-mobile">
+                <div class="header-nav-mobile__heading">
+                    <img src="./assets/img/logo/logo4.png" alt="" class="header-nav-mobile-heading__img">
+                    <button class="nav-mobile-close-btn js__menu-btn--close"><i class="fas fa-times"></i></button>
+                </div>
+                <ul class="header-nav-mobile__list">
+                    <li class="header-nav-mobile-list__item">
+                        <a href="" class="header-nav-mobile-list-item__link"><i class="fas fa-home"></i> Trang chủ</a>
+                    </li>
+                    <li class="header-nav-mobile-list__item">
+                        <a href="" class="header-nav-mobile-list-item__link"><i class="fas fa-th"></i>Shop</a>
+                    </li>
+                    <li class="header-nav-mobile-list__item">
+                        <a href="" class="header-nav-mobile-list-item__link"><i class="fas fa-shopping-cart"></i> Nhân vật</a>
+                    </li>
+                    <li class="header-nav-mobile-list__item">
+                        <a href="" class="header-nav-mobile-list-item__link"><i class="fas fa-newspaper"></i> Chủ đề</a>
+                    </li>
+                    <li class="header-nav-mobile-list__item">
+                        <a href="" class="header-nav-mobile-list-item__link"><i class="fas fa-headset"></i> Sự kiện</a>
+                    </li>
+                    <li class="header-nav-mobile-list__item">
+                        <a href="D:\Hoc phan\Web_\login" class="header-nav-mobile-list-item__link"><i class="fas fa-user"></i> Đăng nhập </a>
+                    </li>
+                    <li class="header-nav-mobile-list__item">
+                        <a href="" class="header-nav-mobile-list-item__link"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--slide-->
+        <div class="slider">
+            <div class="slider__overlay"></div>
+            <div class="slide">
+                <img class="slide__img" src="./assets/img/login/h1.jpg" idx="0" alt="">
+                <img class="slide__img" src="./assets/img/login/h2.jpg" idx="1" alt="">
+                <img class="slide__img" src="./assets/img/login/h3.jpg" idx="2" alt="">
+        
+                <button id="next" class="slide-btn__next"><i class="fas fa-chevron-right"></i></button>
+                <button id="prev" class="slide-btn__prev"><i class="fas fa-chevron-left"></i></button>
+        
+                <div class="change-img">
+                    <button class="active change-btn" idx="0"></button>
+                    <button class="change-btn" idx="1"></button>
+                    <button class="change-btn" idx="2"></button>
+                </div>
+            </div>
+        </div>
+        <!--end slide-->
+
+        <!--Content-->
+        <div class="content">
+            <div class="home__category-mobile">
+                <h4 class="home-category-mobile__title">DANH MỤC</h4>
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/smart_home.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">TRANG PHỤC</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/control_center.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">OFFICE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/camera_ip.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">HOME & DECOR</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/socket.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">DU LỊCH</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/Sensor.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">ĐỒ CHƠI</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/living_room.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">TÚI SÁCH</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/kitchen.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">PHỤ KIỆN</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-row__col-3">
+                            <div class="category-mobile__item">
+                                <a href="" class="category-mobile-item__link">
+                                    <img src="./assets/img/product_portfolio/kitchen.jpg" alt="" class="category-mobile-item-link__img">
+                                    <span class="category-mobile-item-link__name">THIẾT BỊ ĐIỆN TỬ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid-row__col-3 grid-row__col-4-tb">
+                        <!--Danh mục-->
+                        <div class="home__category">
+                            <h4 class="list__heading">DANH MỤC</h4>
+                            <ul class="list__group">
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link"> TRANG PHỤC <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link"> OFFICE <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link">HOME & DECOR <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link">DU LỊCH <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                                </li>
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link">ĐỒ CHƠI <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link"> TÚI XÁCH <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link"> PHỤ KIỆN <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-group__item category__item">
+                                    <a href="" class="list-group-item__link category-item__link">THIẾT BỊ ĐIỆN TỬ <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Tin tức-->
+                        <div class="home__new">
+                            <h4 class="list__heading">TIN TỨC</h4>
+                            <ul class="list__group">
+                                <li class="list-group__item new__item">
+                                    <img src="./assets/img/sp/h4.jpg" alt="" class="home-new-img">
+                                    <a href="" class="list-group-item__link new-item__link">Sản phẩm mới</a>
+                                </li>
+                                <li class="list-group__item new__item">
+                                    <img src="./assets/img/sp/H6.jpg" alt="" class="home-new-img">
+                                    <a href="" class="list-group-item__link new-item__link">Sản phẩm phiên bản giới hạn</a>
+                                </li>
+                                <li class="list-group__item new__item">
+                                    <img src="./assets/img/sp/h7.jpg" alt="" class="home-new-img">
+                                    <a href="" class="list-group-item__link new-item__link">Dánh giá của tháng, chia sẻ những suy nghĩ của bạn</a>
+                                </li>
+                                <li class="list-group__item new__item">
+                                    <img src="./assets/img/sp/h8.jpg" alt="" class="home-new-img">
+                                    <a href="" class="list-group-item__link new-item__link">Những sản phẩm đang hot hiện nay</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Sản phẩm-->
+                    <div class="grid-row__col-9 grid-row__col-8-tb grid-row__col-12-mb">
+                        <div class="home__product">
+                            <h4 class="product__heading">SẢN PHẨM NỔI BẬT</h4>
+                            <span class="product-heading__underline"></span>
+                            <div class="grid__row">
+                                <!--product item-->
+
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                            <div class="product-item__img" style="background-image: url(./assets/img/sp/h9.jpg);"></div>
+                                            <div class="product-item__body">
+                                                <span class="product-item-body__name">BT21 MANG MINI SLING BAG </span>
+                                            <span class="product-item-body__price"><i>Sold out</i></span>
+                                            
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!--product item-->
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                        <div class="product-item__img" style="background-image: url(./assets/img/sp/h10.jpg);"></div>
+                                        <div class="product-item__body">
+                                            <span class="product-item-body__name">BT21 GROUP LOGO CAP BLACK </span>
+                                        <span class="product-item-body__price">$22.95</span>
+                                        <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+
+                                <!--product item-->
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                        <div class="product-item__img" style="background-image: url(./assets/img/sp/11.jpg);"></div>
+                                        <div class="product-item__body">
+                                            <span class="product-item-body__name">LINE FRIENDS KANJI HOODIE</span>
+                                        <span class="product-item-body__price">$49.95</span>
+                                        <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+
+                                <!--product item-->
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                        <div class="product-item__img" style="background-image: url(./assets/img/sp/12.jpg);"></div>
+                                        <div class="product-item__body">
+                                            <span class="product-item-body__name">BT21 DREAM ADULT PAJAMA SET NAVY </span>
+                                        <span class="product-item-body__price">$64.95</span>
+                                        <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+
+                                <!--product item-->
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                        <div class="product-item__img" style="background-image: url(./assets/img/sp/13.jpg);"></div>
+                                        <div class="product-item__body">
+                                            <span class="product-item-body__name">LINE FRIENDS SALLY FRIENDS SALLY PLUSH FACE MAGNET</span>
+                                        <span class="product-item-body__price">$8.95</span>
+                                        <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+
+                                <!--product item-->
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                        <div class="product-item__img" style="background-image: url(./assets/img/sp/14.jpg);"></div>
+                                        <div class="product-item__body">
+                                            <span class="product-item-body__name">BT21 MANG MECHANICAL</span>
+                                        <span class="product-item-body__price">$3.95</span>
+                                        <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+
+                                <!--product item-->
+                                
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                        <div class="product-item__img" style="background-image: url(./assets/img/sp/15.jpg);"></div>
+                                        <div class="product-item__body">
+                                            <span class="product-item-body__name">BT21 SHOOKY DREAM OF BABY PEN POUCH</span>
+                                        <span class="product-item-body__price"><i>Sold Out</i></span>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+
+                                <!--product item-->
+
+                                <div class="grid-row__col-3 grid-row__col-4-tb grid-row__col-6-mb">
+                                    <div class="product__item">
+                                        <a href="" class="product-item__link">
+                                        <div class="product-item__img" style="background-image: url(./assets/img/sp/16.jpg);"></div>
+                                        <div class="product-item__body">
+                                            <span class="product-item-body__name">BT21 HEART WEEKLY PLANNER</span>
+                                        <span class="product-item-body__price">$6.95</span>
+                                        <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Đăng ký nhận tư vấn-->
+            <div class="registration">
+                <div class="registration__overlay"></div>
+                <div class="registration__content">
+                    <div class="registration__heading">
+                        <span>ĐĂNG KÝ NHẬN</span>
+                        <span style="color: var(--primary-color);">TƯ VẤN MIỄN PHÍ</span>
+                    </div>
+                    <div class="registration__form">
+                        <input type="text" class="registration-form__input" placeholder="Nhập email...">
+                        <a href="./login.html" class="registration-form__btn">ĐĂNG KÝ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sản phẩm-->
+            <div class="grid">
+                <div class="home__product">
+                    <div class="product-btn-next-prev">
+                        <a href="" role="button" class="product-btn__prev"><i class="fas fa-chevron-left"></i></a>
+                        <a href="" role="button" class="product-btn__next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <h4 class="product__heading">TÚI</h4>
+                    <span class="product-heading__underline"></span>
+                    <div class="grid__row grid__row-mb--srcoll">
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/18.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">BT21 CHIMMY SILICONE MINI POUCH YELLOW</span>
+                                    <span class="product-item-body__price">$6.95</span>
+                                    <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/19.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">BT21 MANG BABY PRISM STRING POUCH</span>
+                                    <span class="product-item-body__price"><i>Sold Out</i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/20.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">LINE FRIENDS I KBP FABRICS TOTE SHOPPER </span>
+                                    <span class="product-item-body__price">$15.95</span>
+                                    <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/21.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">LINE FRIENDS PUPY BROWN DRAWSTRING POUCH AMBER</span>
+                                    <span class="product-item-body__price">$6.95</span>
+                                    <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Nội thất phòng khách-->
+                <div class="home__product">
+                    <div class="product-btn-next-prev">
+                        <a href="" role="button" class="product-btn__prev"><i class="fas fa-chevron-left"></i></a>
+                        <a href="" role="button" class="product-btn__next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <h4 class="product__heading">ĐỒ CHƠI</h4>
+                    <span class="product-heading__underline"></span>
+                    <div class="grid__row grid__row-mb--srcoll ">
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/22.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">BT21 MANG BABY PRISM FACE BAG CHARM DOLL</span>
+                                    <span class="product-item-body__price"><i>Sold Out</i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/23.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">BT21 TATA BABY PRISM FLAT FUR STANDING DOLL</span>
+                                    <span class="product-item-body__price"><i>Sold Out</i></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/24.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">BT21 SHOOKY JELLY CANDY MINI DOLL</span>
+                                    <span class="product-item-body__price"><i> Sold Out </i></span>
+                                    <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--product item-->
+
+                        <div class="grid-row__col-3 grid-row__col-6-mb">
+                            <div class="product__item">
+                                <a href="" class="product-item__link">
+                                    <div class="product-item__img" style="background-image: url(./assets/img/sp/25.jpg);"></div>
+                                    <div class="product-item__body">
+                                        <span class="product-item-body__name">LINE FRIENDS PUPPY BROWN DRAWSTRING POUCH AMBER</span>
+                                    <span class="product-item-body__price">$62</span>
+                                    <a href="" class="product-item-body__btn" role="button"><i class="fas fa-shopping-cart product-item-body-btn__icon"></i> Mua hàng</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Content-->
+
+
+        <div class="footer">
+            <div class="footer__heading">
+               <div class="footer-heading__social">
+                <span class="footer-heading-social__text">FOLLOW US: </span>
+                <a href="" class="footer-heading-social__link"><img src="https://img.icons8.com/color/48/000000/facebook.png"/></a>
+                <a href="" class="footer-heading-social__link"><img src="https://img.icons8.com/color/48/000000/twitter-squared.png"/></a>
+                <a href="" class="footer-heading-social__link"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+               </div>
+
+               <div class="footer__nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link">Trang chủ</a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link">Sản phẩm</a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link">Tin tức</a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a href="" class="header-nav-list-item__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__body">                
+                <div class="grid">
+                    <div class="grid__row footer__content">
+                           <div class="grid-row__col-4 grid-row__col-12-mb footer__content-left">
+                               <h4 class="footer__content-left-heading">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                               <div class="footer__content-left-email">
+                                   <input type="text" class="footer__content-left-email-input" placeholder="Enter your email address...">
+                                   <i class="fas fa-arrow-right footer__content-left-icon"></i>
+                               </div>
+                               <div class="footer__content-left-checkbox">
+                                   <input id="checkbox" type="checkbox" class="footer__content-left-checkbox-input">
+                                   <label for="checkbox">I ACCEPT TERMS & CONDITION AND PRIVACY POLICY</label>
+                               </div>
+                           </div>
+                           <div class="grid-row__col-2"></div>
+                           <div class="grid-row__col-6 grid-row__col-12-mb footer__content-right">
+                               <ul class="footer__content-left-list">
+                                   <li class="footer__content-left-item active">SHOP</li>
+                                   <li class="footer__content-left-item"> <a href="" class="footer__content-left-link"> Shop all</a></li>
+                                   <li class="footer__content-left-item"> <a href="" class="footer__content-left-link"> About BT21</a></li>
+                               </ul>
+                               <ul class="footer__content-left-list">
+                                    <li class="footer__content-left-item active">NOTICE</li>
+                                    <li class="footer__content-left-item"><a href="" class="footer__content-left-link"> Shipping Information</a></li>
+                                    <li class="footer__content-left-item"><a href="" class="footer__content-left-link"> Returns</a></li>
+                                </ul>
+                                <ul class="footer__content-left-list">
+                                    <li class="footer__content-left-item active">SUPPORT</li>
+                                    <li class="footer__content-left-item"><a href="" class="footer__content-left-link"> FAQ</a></li>
+                                    <li class="footer__content-left-item"><a href="" class="footer__content-left-link"> Contact US</a></li>
+                                </ul>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/jquery_360/jquery-3.6.0.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
